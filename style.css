@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+:root {
+  /* Primary */
+
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /* Neutral */
+
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.main-container {
+  background: var(--white);
+}
+
+/* MAIN */
+
+.container {
+  width: 360px;
+  margin: 25px;
+}
+
+.main-info {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.main-info__tittle {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  color: var(--very-dark-magenta);
+}
+
+.main-info__text {
+  margin-bottom: 40px;
+  font-size: 1.07rem;
+  color: var(--dark-grayish-magenta);
+}
+
+.rated {
+  text-align: center;
+}
+
+.rated__box {
+  background: var(--light-grayish-magenta);
+  width: 100%;
+  height: 5rem;
+  margin: 1rem 0;
+  border-radius: 0.5em;
+}
+
+.rated__box-stars {
+  margin: 0.5em;
+  display: inline-block;
+}
+
+.rated__box-comment {
+  margin-top: 0.5rem;
+  color: var(--very-dark-magenta);
+}
+
+.buyers__card {
+  background: var(--very-dark-magenta);
+  margin: 1rem 0;
+  padding: 2.3rem;
+  border-radius: 0.5em;
+}
+
+.buyers__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.buyers__info-photo {
+  border-radius: 100%;
+  width: 3.2rem;
+}
+
+.buyers__info-text {
+  margin-left: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.buyers__info-text-name {
+  color: #fff;
+}
+
+.buyers__info-text-state {
+  color: var(--soft-pink);
+}
+
+.buyers__reviews {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* FOOTER */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    width: 720px;
+  }
+}
+/* 
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700
+
+*/
