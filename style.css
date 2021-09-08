@@ -25,37 +25,42 @@
   height: 1px;
   padding: 0;
   margin: -1px;
-  overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
 .main-container {
+  width: auto;
+  height: auto;
   background: var(--white);
+  display: flex;
+  align-items: center;
 }
 
 /* MAIN */
 
 .container {
+  min-width: 360px;
   width: 360px;
-  margin: 25px;
+  margin: auto;
 }
 
 .main-info {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 5.33rem;
 }
 
 .main-info__tittle {
-  margin-bottom: 20px;
+  margin-bottom: 1.33rem;
   font-size: 2.2rem;
   color: var(--very-dark-magenta);
 }
 
 .main-info__text {
-  margin-bottom: 40px;
+  margin-bottom: 2.66rem;
   font-size: 1.07rem;
   color: var(--dark-grayish-magenta);
+  line-height: 2rem;
 }
 
 .rated {
@@ -115,6 +120,7 @@
 .buyers__reviews {
   color: #fff;
   font-weight: 500;
+  line-height: 1.9rem;
 }
 
 /* FOOTER */
@@ -127,9 +133,116 @@
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 730px) {
   .container {
-    width: 720px;
+    min-width: 720px;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-info {
+    width: 90%;
+    margin-right: 1.33rem;
+    text-align: left;
+    align-self: center;
+  }
+
+  .rated {
+    width: 100%;
+    margin: 1.33rem;
+    margin-top: 5.33rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rated__box {
+    width: 20rem;
+  }
+
+  .rated__box:nth-child(2) {
+    align-self: center;
+  }
+
+  .rated__box:nth-child(3) {
+    align-self: flex-end;
+  }
+
+  .buyers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buyers__card {
+    width: 30rem;
+  }
+
+  .buyers__card:nth-child(2) {
+    align-self: center;
+  }
+
+  .buyers__card:nth-child(3) {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    min-width: 1200px;
+  }
+
+  .main-info {
+    width: 70%;
+  }
+
+  .main-info__tittle {
+    font-size: 2.8rem;
+    width: 80%;
+    align-self: unset;
+  }
+
+  .rated__box {
+    width: 30rem;
+  }
+
+  .rated__box-stars,
+  .rated__box-comment {
+    display: inline-block;
+    line-height: 4.9rem;
+  }
+
+  .rated__box:nth-child(1) {
+    align-self: flex-end;
+    margin-right: 12rem;
+  }
+
+  .rated__box:nth-child(2) {
+    align-self: flex-end;
+    margin-right: 6rem;
+  }
+
+  .rated__box:nth-child(3) {
+    align-self: flex-end;
+    margin-right: 0;
+  }
+
+  .buyers {
+    flex-direction: row;
+  }
+
+  .buyers__card {
+    width: 25rem;
+    height: max-content;
+  }
+
+  .buyers__card:nth-child(2) {
+    margin: 0 2rem;
+  }
+
+  .buyers__card:nth-child(3) {
+    margin-top: 3.5rem;
   }
 }
 /* 
