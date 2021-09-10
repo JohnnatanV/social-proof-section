@@ -40,7 +40,6 @@
 /* MAIN */
 
 .container {
-  min-width: 360px;
   width: 360px;
   margin: auto;
 }
@@ -60,7 +59,7 @@
   margin-bottom: 2.66rem;
   font-size: 1.07rem;
   color: var(--dark-grayish-magenta);
-  line-height: 2rem;
+  line-height: 200%;
 }
 
 .rated {
@@ -81,6 +80,8 @@
 }
 
 .rated__box-comment {
+  display: block;
+  font-weight: 600;
   margin-top: 0.5rem;
   color: var(--very-dark-magenta);
 }
@@ -106,7 +107,7 @@
 
 .buyers__info-text {
   margin-left: 1.5rem;
-  line-height: 1.5rem;
+  line-height: 150%;
 }
 
 .buyers__info-text-name {
@@ -120,7 +121,7 @@
 .buyers__reviews {
   color: #fff;
   font-weight: 500;
-  line-height: 1.9rem;
+  line-height: 140%;
 }
 
 /* FOOTER */
@@ -135,7 +136,7 @@
 
 @media screen and (min-width: 730px) {
   .container {
-    min-width: 720px;
+    width: 720px;
   }
 
   .info-container {
@@ -190,7 +191,7 @@
 
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    width: 1200px;
   }
 
   .main-info {
